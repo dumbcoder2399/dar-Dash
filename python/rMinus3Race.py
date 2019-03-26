@@ -5,17 +5,17 @@ import itertools
 import numpy as np
 import json
 import math
-import xml.etree.ElementTree as ET
-from signal import pause
-from bluedot import BlueDot
-import rospy
-from std_msgs.msg import String
+# import xml.etree.ElementTree as ET
+# from signal import pause
+# #from bluedot import BlueDot
+# import rospy
+# from std_msgs.msg import String
 import dynamixel
 import os
 #--------------------------------------------------------------OFFSETS------------------------------------------------------------------------------
 # darwin = {1: 90, 2: -90, 3: 67.5, 4: -67.5, 7: 45, 8: -10, 9: 'i', 10: 'i', 13: 'i', 14: 'i', 17: 'i', 18: 'i'}
 
-darwin = {1: 90, 2: -90, 3: 67.5, 4: -67.5, 7: 45, 8: -10, 9: 'i', 10: 'i', 13: 'i', 14: 'i', 17: 'i', 18: 'i'}
+darwin = {1: 90, 2: -90, 3: 67.5, 4: -67.5, 7: 45, 8: -45, 9: 'i', 10: 'i', 13: 'i', 14: 'i', 17: 'i', 18: 'i'}
 darwin_boom = {13: -12, 14: 10}
 #abmath = {11: 5, 12: -5, 13: -10, 14: 10, 15: -5, 16: 5}
 abmath = {11: 7, 12: -5}
